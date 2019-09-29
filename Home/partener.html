@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../Public/css/base.min.css">
+    <link rel="stylesheet" href="./../Public/css/index.min.css">
+    <link rel="stylesheet" href="./../Public/css/swiper.min.css">
+    <script src='./../Public/js/jquery-1.8.3.min.js'></script>
+    <script src="./../Public/js/swiper.min.js"></script>
+</head>
+
+
+<body>
+    <!-- 顶部导航 -->
+    <div id="header">
+        <div class="header-wrap">
+            <a class="logo" href="#">
+                <img class="fl" src="./../Public/images/logo.png" alt=""> 金车在线  客户云集
+            </a>
+            <a href="javascript:;" class="more fr">
+                <img src="./../Public/images/more.png" alt="">
+            </a>
+            <!--导航栏-->
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="products-services">
+                        产品与服务
+                        <i class="triangle_border_down"></i>
+                    </li>
+                    <li>
+                        <a href="./partener.html">申请合作</a>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./join_us3.html">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="http://cp.dealergood.com/login/index/index">经销商登录</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-nav-list" style="display: none;">
+            <!--产品与服务列表-->
+            <ul class="fn-clear" >
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">
+                        <div class="c3pc-list-left-element">车况报告</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车车况</div>
+                            <div class="instructions">全面的车况报告</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">
+                        <div class="c3pc-list-left-element">配件报价</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车配件报价</div>
+                            <div class="instructions">车厂准确配件价格</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">
+                        <div class="c3pc-list-left-element">服务预测</div>
+                        <div class="c3pc-list-right-element">
+                            <div>完整服务预测</div>
+                            <div class="instructions">帮你更加了解你的爱车</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">
+                        <div class="c3pc-list-left-element">售后智能</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车售后智能</div>
+                            <div class="instructions">基于大数据的智能体系</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">
+                        <div class="c3pc-list-left-element">行业数据</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车行业数据</div>
+                            <div class="instructions">金车行业车型数据</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div id="slidebar">
+        <ul>
+            <li class="btn sure"><a href="./index.html">首页</a></li>
+            <li class="btn"><a href="./partener.html">申请合作</a></li>
+            <li class="btn"><a href="./aboutus.html">关于我们</a></li>
+            <li class="btn"><a href="./join_us3.html">加入我们</a></li>
+        </ul>
+    </div>
+    <div id="partener">
+        <div class="cooperation-bg-box">
+            <div class="cooperation-title-box">
+                <h1 class="cooperation-title">商务合作</h1>
+                <p class="cooperation-sub-text">请填写您的需求，我们将会在第一时间安排专人与您联系</p>
+                <p class="cooperation-sub-text cooperation-sub-text2">您也可以致电我们：13661974982</p>
+            </div>
+        </div>
+        <div class="cooperation-container">
+            <div class="cooperation-form">
+                <div class="input-item">
+                    <i>请选择需求类型</i>
+                    <span class="star">*</span>
+                    <span class="hint">需求类型</span>
+                    <div class="input select-box" id="select-box">
+                        <span class="selected-value" id="selected-value">请选择</span>
+                        <div class="select-box-list" id="select-box-list" style="display: none;">
+                            <span class="select-list-item" id="idx0">车况报告</span>
+                            <span class="select-list-item" id="idx1">汽车售后智能</span>
+                            <span class="select-list-item" id="idx2">汽车行业数据分析</span>
+
+                            <span class="select-list-item" id="idx3">其他</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-item">
+                    <i>长度在10个字以内</i>
+                    <span class="star">*</span>
+                    <span class="hint">您的姓名</span>
+                    <input class="input" type="text" id="contact">
+                </div>
+                <div class="input-item">
+                    <i>请输入正确的手机号</i>
+                    <span class="star">*</span>
+                    <span class="hint">联系电话</span>
+                    <input class="input" type="text" id="phone" maxlength="11">
+                </div>
+                <div class="input-item">
+                    <i>长度在30个字以内</i>
+                    <span class="star">*</span>
+                    <span class="hint">公司名称</span>
+                    <input class="input" type="text" id="company">
+                </div>
+                <div class="submit-btn-box">
+                    <button id="user-submit" class="submit-btn btn">提交需求</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="footer-wrap">
+            <ul>
+                <li class="foot-title">
+                    产品与服务
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">车况报告</a>
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">全车配件报价</a>
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">服务预测和驾驶行为</a>
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">汽车售后智能</a>
+                </li>
+                <li>
+                    <a href="./index.html?_ijt=qngupq7q55t15vqfreltl78itn#section-5">汽车行业数据</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="foot-title">
+                    关于我们
+                </li>
+                <li>
+                    <a href="./aboutus.html">公司简介</a>
+                </li>
+                <li>
+                    <a href="./join_us3.html">加入我们</a>
+                </li>
+                <li>
+                    <a href="./partener.html">申请合作</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="foot-title foot-call-me">
+                    <i></i> 联系我们
+                </li>
+                <li class="footer-tel">
+                    <div><i></i>客服热线：</div>
+                    <div>13661974982</div>
+                </li>
+                <li class="footer-tel">
+                    <div><i></i>邮箱</div>
+                    <div>info@dealergood.com</div>
+                </li>
+                <li class="footer-loc">
+                    <div><i></i>上海</div>
+                    <div>总部地址 : 上海市嘉定区洪德路1139号710室</div>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <img src="./../Public/images/wechat_qrcode.png">
+
+                <p>扫一扫 关注金车简介官方微信</p>
+            </div>
+        </div>
+        <div class="for-record">
+            <p class="copyright">Copyright © 2016 沪ICP备16005808号-1
+            </p>
+            <p>滕萧信息科技</p>
+        </div>
+    </footer>
+    <ul id="fixed">
+        <li class="fixed-feedback user_feedback icon_feedback_nor">
+            <a href="./partener.html">申请合作</a>
+        </li>
+        <li class="fixed-tel icon_tel_nor">
+            <div class="tel-detail">
+                <span class="tel-label">
+                    <i class="home-icons icon_service_tel"></i>
+                    <p>客服电话</p>
+                </span>
+                <span class="tel-number">
+                    13661974982 </span>
+            </div>
+        </li>
+        <li class="fixed-app icon_qrcode_nor">
+            <div class="app">
+                <img class="wechat-qrcode" src="./../Public/images/wechat_qrcode.png">
+                <p class="qrcode-desc">扫码关注 金车 微信公众号</p>
+            </div>
+        </li>
+        <li class="fixed-backtop icon_up_nor">
+        </li>
+    </ul>
+</body>
+<script>
+    $(function() {
+        $('.products-services').on('hover', function() {
+            $('.header-nav-list').slideDown();
+        });
+        $('.header-nav-list').on('mouseleave', function() {
+            $('.header-nav-list').slideUp();
+        });
+        $('#contact').on('change', function() {
+            if ($(this).text().length < 10) {
+                $(this).siblings('i').show();
+                $(this).css({
+                    'border': '1px solid red'
+                })
+            } else {
+                $(this).siblings('i').hide();
+            }
+        });
+        $('#phone').on('change', function() {
+            if (!(/^1[3456789]\d{9}$/.test($(this).val()))) {
+                $(this).siblings('i').show();
+                $(this).css({
+                    'border': '1px solid red'
+                })
+            } else {
+                $(this).siblings('i').hide();
+            }
+        });
+        $('#company').on('change', function() {
+            if ($(this).text().length > 30) {
+                $(this).siblings('i').show();
+                $(this).css({
+                    'border': '1px solid red'
+                })
+            } else {
+                $(this).siblings('i').hide();
+            }
+        });
+        $('#selected-value').on('click', function() {
+            $('.select-box-list').slideToggle();
+        })
+        $('.select-box-list .select-list-item').on('click', function() {
+                $('#selected-value').text($(this).text());
+                $('.select-box-list').slideToggle();
+            })
+            /* 下拉列表 */
+        $('#header .more').on('click', function() {
+            $('#slidebar').slideToggle();
+        })
+    })
+</script>
+
+</html>

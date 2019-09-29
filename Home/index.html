@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./../Public/css/base.min.css">
+    <link rel="stylesheet" href="./../Public/css/index.min.css">
+    <link rel="stylesheet" href="./../Public/css/swiper.min.css">
+    <script src='./../Public/js/jquery-1.8.3.min.js'></script>
+    <script src="./../Public/js/swiper.min.js"></script>
+</head>
+
+
+<body>
+    <!-- 顶部导航 -->
+    <div id="header">
+        <div class="header-wrap">
+            <a class="logo" href="#">
+                <img class="fl" src="./../Public/images/logo.png" alt=""> 金车在线  客户云集
+            </a>
+            <a href="javascript:;" class="more fr">
+                <img src="./../Public/images/more.png" alt="">
+            </a>
+            <!--导航栏-->
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="products-services">
+                        产品与服务
+                        <i class="triangle_border_down"></i>
+                    </li>
+                    <li>
+                        <a href="./partener.html">申请合作</a>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./join_us3.html">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="http://cp.dealergood.com/login/index/index">经销商登录</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-nav-list" style="display:none;">
+            <!--产品与服务列表-->
+            <ul class="fn-clear" >
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">车况报告</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车车况</div>
+                            <div class="instructions">全面的车况报告</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">配件报价</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车配件报价</div>
+                            <div class="instructions">车厂准确配件价格</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">服务预测</div>
+                        <div class="c3pc-list-right-element">
+                            <div>完整服务预测</div>
+                            <div class="instructions">帮你更加了解你的爱车</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">售后智能</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车售后智能</div>
+                            <div class="instructions">基于大数据的智能体系</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">行业数据</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车行业数据</div>
+                            <div class="instructions">金车行业车型数据</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div id="slidebar">
+        <ul>
+            <li class="btn sure"><a href="./index.html">首页</a></li>
+            <li class="btn"><a href="./partener.html">申请合作</a></li>
+            <li class="btn"><a href="./aboutus.html">关于我们</a></li>
+            <li class="btn"><a href="./join_us3.html">加入我们</a></li>
+        </ul>
+    </div>
+    <!-- banner -->
+    <div id="banner">
+        <div class="header-banner">
+            <div class="header-banner-text">
+                <div class="tit1">车况报告</div>
+                <div class="tit2" style="margin-bottom: 20px;">汽车售后智能</div>
+                <div class="tit2">汽车行业数据</div>
+                <div class="smalltext">提供从全车报告，智能售后服务到汽车行业数据的全方位解决方案</div>
+            </div>
+            <!-- 动画 -->
+            <div class="banner"></div>
+        </div>
+    </div>
+    <div class="topguide">
+        <div class="btn-group">
+            <div class="btn">
+                <div class="features-img features-riskmanagemen"></div>
+                <span>车况报告</span>
+            </div>
+            <div class="btn">
+                <div class="features-img features-date"></div>
+                <span>汽车售后智能</span>
+            </div>
+            <div class="btn">
+                <div class="features-img features-AI"></div>
+                <span>汽车行业数据分析</span>
+            </div>
+
+        </div>
+    </div>
+    <!-- 轮播 -->
+    <div id="slidebox">
+        <p class="tit" id="section-5">了解我们的产品</p>
+
+        <ul class="slideBox-slide-trigger">
+            <li class="swiperSelected"><a href="javascript:">全车车况</a></li>
+            <li class=""><a href="javascript:">服务预测和驾驶行为</a></li>
+            <li class=""><a href="javascript:">配件报价</a></li>
+
+            <li class=""><a href="javascript:">售后智能</a></li>
+            <li class=""><a href="javascript:">行业数据</a></li>
+        </ul>
+        <div class="swiper-background">
+            <div class="swiper-container swiper-container-horizontal">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide professional fn-clear">
+                        <div class="png fl">
+                            <img src="./../Public/images/car1.png" alt="">
+                        </div>
+                        <div class="professional-content fl">
+                            <h3>
+                                <span >全车车况</span> - 服务于汽车交易和汽车维修从业用户的专业工具</h3>
+                            <h4>跨店服务时间，行驶里程，服务内容包括日期，公里，服务类型，项目，材料，金额</h4>
+
+
+                            <div style="overflow: hidden;padding-left: 30px;">
+                                <ul>
+                                    <li style="clear: left">
+
+                                        <div >一键查询车辆服务历史</div>
+
+                                    </li>
+                                    <li style="clear: left">
+
+                                        <div>历史包括4S店，独立售后和碰撞历史</div>
+
+                                    </li>
+                                    <li style="clear: left">
+
+                                        <div  >了解跨店服务时间，行驶里程，服务内容</div>
+
+                                    </li>
+                                    <li style="clear: left">
+
+                                        <div >服务内容包括日期，公里，服务类型，项目，材料，金额</div>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            <div class="mainbtn">
+                                <div class="btn gama-cooperation">
+                                    <a href="./partener.html">
+                                        <i></i>申请合作
+                                    </a>
+                                </div>
+                                <div class="btn professional-learn-more">
+                                    <a href="#"><i></i>了解更多</a></div>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="swiper-slide gama fn-clear">
+
+                        <div class="png fr">
+                            <img src="./../Public/images/car3.png" alt="">
+                        </div>
+                        <div class="gama-content fl">
+                            <h3>
+                                <span>基础服务预测</span> - 结合保养周期，系统自动推算基础服务预测
+                            </h3>
+                            <h4>统计车主消费习惯，帮助门店在接车第一时间快速了解车辆的一车一况信息</h4>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>完整的服务预测</div>
+                                        <div>结合主机厂车型保养周期，</div>
+                                        <div>系统自动推算基础服务预测</div>
+                                    </li>
+                                    <li>
+
+                                        <div>统计车主消费习惯</div>
+                                        <div>帮助门店在第一时间快速</div>
+                                        <div>了解车辆的一车一况信息</div>
+                                    </li>
+                                    <li>
+                                        <div>强大的后台管理</div>
+                                        <div>短信微信的实时提醒,贴心爱护您的爱车</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mainbtn">
+                                <div class="btn gama-cooperation">
+                                    <a href="./partener.html">
+                                        <i></i>申请合作
+                                    </a>
+                                </div>
+                                <div class="btn gama-learn-more">
+                                    <a href="#"><i></i>了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide personal fn-clear">
+                        <div class="png fl">
+                            <img src="./../Public/images/car2.png" alt="">
+                        </div>
+                        <div class="personal-content fl">
+                            <h3>
+                                <span>配件报价</span> - 助力门店快速面客报价、抓住成交商机</h3>
+                            <h4>配件报价提供维修件的原厂4S售价和品牌件（及副厂件、修复件等）市场采购价秒报数据</h4>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div >配件详情</div>
+                                        <div>精准配件名称,配件号</div>
+                                        <div>精准配件价格</div>
+                                    </li>
+                                    <li>
+                                        <div>配件选择</div>
+                                        <div>三级结构清晰明了</div>
+                                        <div>几万配件自由选择</div>
+                                    </li>
+                                    <li>
+                                        <div>配件价格对比</div>
+                                        <div>精准原厂价格,精准4s店价格对比</div>
+                                        <div>拒绝高价维修</div>
+                                    </li>
+                                    <li>
+                                        <div>配件商推荐</div>
+                                        <div>更优质的配件商推荐,更便宜的配件选择,更优秀的维修站推荐</div>
+                                    </li>
+                                    <li>
+                                        <div>价格秒报</div>
+                                        <div>自由选择</div>
+                                        <div>无需等待,极速报价</div>
+                                    </li>
+                                    <li>
+                                        <div>车友圈社区</div>
+                                        <div>专业，有趣的车友内容社区</div>
+                                        <div>汽车资讯、车友分享......给你想要的内容和服务</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mainbtn">
+                                <div class="btn gama-cooperation">
+                                    <a href="./partener.html">
+                                        <i></i>申请合作
+                                    </a>
+                                </div>
+                                <div class="btn personal-learn-more">
+                                    <a href="#"><i></i>了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide personal fn-clear">
+                        <div class="png fl">
+                            <img src="./../Public/images/intelligent1.png" alt="">
+                        </div>
+                        <div class="personal-content fl">
+                            <h3>
+                                <span>汽车售后智能</span> - 智能跟踪 智能推荐</h3>
+                            <h4>自动为经销商进行后续维保服务情况的跟踪，并在正确的时间、对正确的对象推送适配的服务和产品</h4>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>车管家服务</div>
+                                        <div>提高服务商在车主心中的认可度</div>
+                                        <div>提高客单价</div>
+                                    </li>
+                                    <li>
+                                        <div>预约服务</div>
+                                        <div>及时掌握车间工位情况</div>
+                                        <div>合理安排工位</div>
+                                    </li>
+                                    <li>
+                                        <div>高效无需等待</div>
+                                        <div>系统提前预约</div>
+                                        <div>智能安排维修时间</div>
+                                    </li>
+                                    <li>
+                                        <div>智能跟踪</div>
+                                        <div>微信或短信系统全自动跟踪车主</div>
+                                        <div>车主手机端一键预约</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mainbtn">
+                                <div class="btn gama-cooperation">
+                                    <a href="./partener.html">
+                                        <i></i>申请合作
+                                    </a>
+                                </div>
+                                <div class="btn personal-learn-more">
+                                    <a href="#"><i></i>了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide personal fn-clear">
+                        <div class="png fl">
+                            <img src="./../Public/images/intelligent3.png" alt="">
+                        </div>
+                        <div class="personal-content fl">
+                            <h3>
+                                <span>汽车行业数据</span> - 完整的行业车型数据</h3>
+                            <h4>结合独立售后数据,4S店数据,碰撞数据金车形成完整的行业数据</h4>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <div>全面的记录</div>
+                                        <div>更全面车型数据</div>
+                                        <div>OE标准配件和工时数据基础</div>
+                                    </li>
+                                    <li>
+                                        <div>价格体系</div>
+                                        <div>配件和工时的标准价格体系</div>
+                                        <div>独立售后与OE的价格对比</div>
+                                    </li>
+                                    <li>
+                                        <div>提高竞争力</div>
+                                        <div>独立的竞品价格分析</div>
+                                        <div>及时掌控市场价格,提高商家竞争力</div>
+                                    </li>
+                                    <li>
+                                        <div>系统决策</div>
+                                        <div>全面的数据支撑各种系统化的决策</div>
+                                        <div>可视化图文报告预测发展方向</div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mainbtn">
+                                <div class="btn gama-cooperation">
+                                    <a href="./partener.html">
+                                        <i></i>申请合作
+                                    </a>
+                                </div>
+                                <div class="btn personal-learn-more">
+                                    <a href="#"><i></i>了解更多</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 合作伙伴 -->
+    <div class="partener">
+        <h3>为25个品牌4S店和3000多家维修企业提供服务</h3>
+        <h4>覆盖主机厂、经销商集团、车贷金融公司、行业合作伙伴等</h4>
+        <div class="partners-show-img fn-clear">
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-01.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-02.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-03.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-04.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-05.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-19.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-07.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-08.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-09.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-10.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-11.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-17.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-13.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-14.png" style="display: inline;">-->
+            <!--<img class="partners-images fl" src="https://ssl-assets.che300.com/feimg/web3.0/home/partners-show/s-15.png" style="display: inline;">-->
+
+             <img class="partners-images fl" src="../page/img/partener/dazong.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/bentian.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/fute.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/leinuo.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/sikeda.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/jeep.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/donngnan.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/qirui.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/linken.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/xuefulan.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/changan.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/rongwei.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/kaidilake.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/buick.jpg" style="display: inline;">
+            <img class="partners-images fl" src="../page/img/partener/baoma.jpg" style="display: inline;">
+        </div>
+    </div>
+    <!-- 公司荣誉 -->
+    <div id="honor">
+        <h3>公司荣誉</h3>
+        <div class="btn-group">
+            <div class="btn">
+                <img src="../page/img/partener/rongyu-1.jpg" alt="">
+            </div>
+            <div class="btn">
+                <img src="../page/img/partener/rongyu-2.jpg" alt="">
+            </div>
+            <div class="btn">
+                <img src="./../Public/images/ry-8.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class='indexpartener'>
+        <h3>合作共赢，多种合作方式供您选择</h3>
+        <a href="./partener.html" class="btn">申请合作</a>
+    </div>
+    <footer id="footer">
+        <div class="footer-wrap">
+            <ul>
+                <li class="foot-title">
+                    产品与服务
+                </li>
+                <li>
+                    <a href="#section-5">车况报告</a>
+                </li>
+                <li>
+                    <a href="#slidebox">全车配件报价</a>
+                </li>
+                <li>
+                    <a href="#slidebox">服务预测和驾驶行为</a>
+                </li>
+                <li>
+                    <a href="#slidebox">汽车售后智能</a>
+                </li>
+                <li>
+                    <a href="#slidebox">汽车行业数据</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="foot-title">
+                    关于我们
+                </li>
+                <li>
+                    <a href="./aboutus.html">公司简介</a>
+                </li>
+                <li>
+                    <a href="./join_us3.html">加入我们</a>
+                </li>
+                <li>
+                    <a href="./partener.html">申请合作</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="foot-title foot-call-me">
+                    <i></i> 联系我们
+                </li>
+                <li class="footer-tel" style="">
+                    <div><i></i>客服热线：</div>
+                    <div>13661974982</div>
+                </li>
+                <li class="footer-tel">
+                    <div><i></i>邮箱</div>
+                    <div>info@dealergood.com</div>
+                </li>
+                <li class="footer-loc">
+                    <div><i></i>上海</div>
+                    <div>总部地址 : 上海市嘉定区洪德路1139号710室</div>
+                </li>
+            </ul>
+            <div class="qr-code">
+                <img src="./../Public/images/wechat_qrcode.png">
+
+                <p>扫一扫 关注金车简介官方微信</p>
+            </div>
+        </div>
+        <div class="for-record">
+            <p class="copyright">Copyright © 2016 沪ICP备16005808号-1
+            </p>
+            <p>滕萧信息科技</p>
+        </div>
+    </footer>
+    <ul id="fixed">
+        <li class="fixed-feedback user_feedback icon_feedback_nor">
+            <a href="./partener.html">申请合作</a>
+        </li>
+        <li class="fixed-tel icon_tel_nor">
+            <div class="tel-detail">
+                <span class="tel-label">
+                    <i class="home-icons icon_service_tel"></i>
+                    <p>客服电话</p>
+                </span>
+                <span class="tel-number">
+                    13661974982 </span>
+            </div>
+        </li>
+        <li class="fixed-app icon_qrcode_nor">
+            <div class="app">
+                <img class="wechat-qrcode" src="./../Public/images/wechat_qrcode.png">
+                <p class="qrcode-desc">扫码关注 金车 微信公众号</p>
+            </div>
+        </li>
+        <li class="fixed-backtop icon_up_nor">
+        </li>
+    </ul>
+</body>
+<script>
+    $(function() {
+        $('.products-services').on('hover', function() {
+            $('.header-nav-list').slideDown();
+        })
+        $('.header-nav-list').on('mouseleave', function() {
+                $('.header-nav-list').slideUp();
+            })
+            /* 轮播 */
+        $(".professional-scan-download").mouseover(function() {
+            $(".phone-content-professional-mask").show()
+        }), $(".professional-scan-download").mouseout(function() {
+            $(".phone-content-professional-mask").hide()
+        }), $(".personal-scan-download").mouseover(function() {
+            $(".phone-content-personal-mask").show()
+        }), $(".personal-scan-download").mouseout(function() {
+            $(".phone-content-personal-mask").hide()
+        });
+        var h = new Swiper(".swiper-container", {
+            // loop: true,
+            autoplay: {
+                delay: 22226000,
+            },
+            on: {
+                slideChangeTransitionStart: function() {
+                    $('.slideBox-slide-trigger li').eq(this.activeIndex).addClass('swiperSelected').siblings().removeClass('swiperSelected')
+                },
+            }
+        });
+        var b = $('.slideBox-slide-trigger li');
+        b.mouseover(function() {
+                console.log($(this).index());
+                h.autoplay.stop(), h.slideTo($(this).index(), 500)
+            }),
+            b.mouseout(function() {
+                h.autoplay.start()
+            }),
+            $(".swiper-slide").mouseover(function() {
+                h.autoplay.stop();
+            }),
+            $(".swiper-slide").mouseout(function() {
+                h.autoplay.start()
+            })
+        $('.fixed-backtop').on('click', function() {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 1000);
+            })
+            /* 下拉列表 */
+        $('#header .more').on('click', function() {
+            $('#slidebar').slideToggle();
+        })
+    })
+</script>
+
+</html>

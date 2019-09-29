@@ -1,0 +1,213 @@
+hr {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.t-a-c {
+    text-align: center;
+}
+
+.clear-both {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.top {
+    vertical-align: middle;
+}
+
+.top h3 {
+    padding: 2em 1em 2em 1em;
+    margin: 0;
+    background-color: #1BBC9B;
+}
+
+.top-img {
+    background-color: #fff;
+}
+
+.top-img img {
+    width: 50%;
+    float: left;
+    display: block;
+    background-color: #fff;
+}
+
+.img1 {
+    padding-top: 8%;
+}
+
+.img2 {
+    padding-top: 0%;
+}
+
+.top-txt {
+    display: block;
+}
+
+.top-txt p {
+    text-align: center;
+    font-size: 22px;
+    background-color: #1BBC9B;
+    padding: 1.8em 0;
+    margin: 0;
+}
+
+.two {
+    padding: 0 1em;
+}
+
+.two h3 {
+    padding: 1em 0;
+    text-indent: 2em;
+    font-weight: 600;
+}
+
+.two ul {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.two ul>li {
+    margin: 0 1em;
+}
+
+.two dl>dt {
+    padding: 1em 0;
+    line-height: 1.5;
+    font-size: 20px;
+    text-indent: 2em;
+}
+
+.three h3 {
+    padding: 2em 0 0 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.three ul {
+    font-size: 22px;
+    line-height: 3;
+    width: 50%;
+    display: block;
+    float: left;
+}
+
+.three ul>li {
+    margin: 0 10%;
+}
+
+.three img {
+    width: 100%;
+    display: block
+}
+
+.four h3 {
+    padding: 1em;
+    text-align: center;
+    font-size: 26px;
+}
+
+.four ul {
+    padding: 0 10%;
+    line-height: 3;
+    font-size: 24px;
+}
+
+.four ul li {
+    margin: 0 10%;
+}
+
+.bottom h3 {
+    padding: 1em;
+    text-align: center;
+    font-size: 26px;
+}
+
+.bottom ul {
+    padding: 0 10%;
+    line-height: 3;
+    font-size: 24px;
+}
+
+.bottom ul li {
+    margin: 0 10%;
+}
+
+.jinche h3{
+    font-size: 32px;
+    text-shadow: 1px 1px 2px red;
+}
+.jinche ul li{
+    font-size: 24px;
+    text-shadow: 2px 2px 2px #8e8e8e;
+}
+@media(max-width:768px) {
+    .top-img img {
+        width: 100%;
+    }
+    .img1 {
+        padding-top: 0%;
+    }
+    .two h3 {
+        padding: 0;
+        font-size: 14px;
+    }
+    .three h3 {
+        font-size: 18px;
+    }
+    .three ul {
+        font-size: 14px;
+        line-height: 2;
+        padding: 0;
+        width: 100%;
+    }
+    .three ul>li {
+        padding: 0;
+        -webkit-animation-name: none;
+        -moz-animation-name: none;
+    }
+    .three img {
+        width: 100%;
+        padding: 0;
+    }
+    .four h3 {
+        padding: 1em;
+        text-align: center;
+        font-size: 22px;
+    }
+    .four ul {
+        padding: 0 5%;
+        line-height: 2;
+        font-size: 20px;
+    }
+    .four ul li {
+        margin: 0 6%;
+    }
+}
+
+.ico img {
+    float: right;
+    padding: 1em;
+}
+
+
+/*火狐hack*/
+
+@-moz-document url-prefix() {
+    .img1 {
+        padding-bottom: 7.65%;
+    }
+}

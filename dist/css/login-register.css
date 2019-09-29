@@ -1,0 +1,75 @@
+/* code by liyafei 2016/3/18 */
+
+.login,
+.register {
+    background-image: url(../img/login-register/login-bg1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.login-box-body,
+.register-box-body {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    color: #666;
+    box-shadow: 1px 1px 10px #504e4e
+}
+
+.login-middle {
+    margin-top: 2em;
+    padding: 3em;
+}
+
+.register-middle {
+    margin-top: 2em;
+    padding: 2em;
+}
+
+.shade {
+    /*background: rgba(2, 2, 2, 0.5);*/
+}
+
+.page-slogan {
+    color: #DCC55C;
+    font-family: fantasy;
+    vertical-align: middle;
+    padding: 15px 10px 0 0;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.pr {
+    padding-right: 15px;
+    padding-left: 0;
+    text-align: right;
+    border-left: 0;
+}
+
+@media (max-width: 768px) {
+    .login-middle,
+    .register-middle {
+        background: none;
+        box-shadow: none;
+    }
+    .page-slogan {
+        color: #DCC55C;
+        font-family: sans-serif;
+        vertical-align: middle;
+        text-align: center
+    }
+    .pr {
+        padding-right: 15px;
+        padding-left: 0;
+        text-align: left;
+        border-left: 0;
+        font-size: 14px
+    }
+    .title {
+        font-size: 14px
+    }
+}

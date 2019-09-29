@@ -1,0 +1,451 @@
+/*CODE 2016/3/10 BY LYF*/
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.nav > li:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    background-color: #222222;
+    border: none;
+    color: white;
+}
+
+.video-play {
+    color: dodgerblue;
+}
+
+
+/* index css */
+
+.page-body {
+    min-width: 320px;
+}
+
+.page-slogan {
+    color: #DCC55C;
+    font-family: sans-serif;
+    vertical-align: middle;
+    padding: 0px 10px 0 0;
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+@media (max-width:768px) {
+    .page-slogan {
+        color: #DCC55C;
+        font-family: sans-serif;
+        vertical-align: middle;
+        text-align: center
+    }
+}
+
+.page-slide-img {
+    width: 100%;
+    max-height: 600px;
+}
+
+.page-content {
+    text-align: center;
+    background-color: rgba(162, 162, 162, 0.32);
+    width: 100%;
+    margin: 0;
+    padding: 20px 10px;
+    font-weight: lighter;
+    font-size: 22px;
+    font-family: serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    color: #2f2f2f
+}
+
+.page-item {
+    max-width: 200px;
+    max-height: 200px;
+}
+
+.page-item-info {}
+
+.page-future {
+    padding: 50px 0px;
+    margin: 0 auto;
+}
+
+.page-footer {
+    border-right: solid 1px #000000;
+}
+
+.page-footer-txt {
+    margin: 0px 15px;
+}
+
+
+/* solution css */
+
+.page-images {
+    padding: 0;
+    margin: 0;
+}
+
+.page-col-margin {
+    margin: 10px 0;
+}
+
+@media (max-width: 767px) {
+    .page-images {
+        max-width: 150px;
+    }
+    .page-mobil {
+        padding-top: 10px;
+    }
+}
+
+
+/* misson css */
+
+.page-blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #ccc;
+    margin: 1.5em 10px;
+    padding: .5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+.page-blockquote2 {
+    margin: 1em;
+    border-left: 1px dashed #999;
+    padding-left: 1em;
+}
+
+.page-blockquote2 p:first-letter {
+    float: left;
+    margin: 0 .3em .1em 0;
+    font-family: "Monotype Corsiva", "Apple Chancery", fantasy;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.page-blockquote2 p:first-line {
+    font-variant: small-caps;
+}
+
+
+/* contact_us css */
+
+
+/* bootstrap 附加导航 affix */
+
+ul.nav-tabs {
+    width: 140px;
+    margin-top: 20px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.067);
+}
+
+ul.nav-tabs li {
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+ul.nav-tabs li:first-child {
+    border-top: none;
+}
+
+ul.nav-tabs li a {
+    margin: 0;
+    padding: 8px 16px;
+    border-radius: 0;
+}
+
+ul.nav-tabs li.active a,
+ul.nav-tabs li.active a:hover {
+    color: #fff;
+    background: #0088cc;
+    border: 1px solid #0088cc;
+}
+
+ul.nav-tabs li:first-child a {
+    border-radius: 4px 4px 0 0;
+}
+
+ul.nav-tabs li:last-child a {
+    border-radius: 0 0 4px 4px;
+}
+
+ul.nav-tabs.affix {
+    top: 70px;
+    /* Set the top position of pinned element */
+}
+
+
+/* login css */
+
+@import url('http://cdn.gbtags.com/font-awesome/4.1.0/css/font-awesome.min.css');
+input,
+button,
+select,
+textarea {
+    outline: none;
+    box-shadow: none
+}
+
+* {
+    transition: box-shadow 1s ease 0s;
+}
+
+.login {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 320px;
+    height: 380px;
+    padding: 50px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.form-input {
+    border-bottom: 1px solid #666;
+}
+
+.form-input span {
+    padding: 0 5px;
+    float: left;
+    line-height: 46px;
+}
+
+.input-lg {
+    border: none;
+    border-radius: 0;
+    background: none;
+}
+
+.focus {}
+
+.error {}
+
+.form-signin button {
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    background: rgba(94, 171, 249, 0.5);
+}
+
+.form-signup {
+    overflow: hidden;
+    line-height: 34px;
+}
+
+.form-signup p {
+    float: left;
+}
+
+.form-signup button {
+    float: right;
+    border: none;
+    border-radius: 0;
+}
+
+.error {
+    box-shadow: 0 0 5px red;
+}
+
+.success {
+    box-shadow: 0 0 5px green;
+}
+
+.none {
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0)
+    }
+}
+
+@keyframes shake {
+    0%,
+    100% {
+        -webkit-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0)
+    }
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+        -webkit-transform: translate3d(-10px, 0, 0);
+        -ms-transform: translate3d(-10px, 0, 0);
+        transform: translate3d(-10px, 0, 0)
+    }
+    20%,
+    40%,
+    60%,
+    80% {
+        -webkit-transform: translate3d(10px, 0, 0);
+        -ms-transform: translate3d(10px, 0, 0);
+        transform: translate3d(10px, 0, 0)
+    }
+}
+
+.shake {
+    -webkit-animation-name: shake;
+    animation-name: shake;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.page-login-logo {
+    padding-top: 50%;
+}
+
+@media (max-width: 767px) {
+    .page-login-logo {
+        padding-top: 10px;
+        margin-bottom: -100px;
+    }
+    .page-footer-txt {
+        margin: 0px 8px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .page-login-logo {
+        padding-top: 50px;
+    }
+}
+
+
+/* join us */
+
+.page-join {
+    box-shadow: 1px 1px 50px rgba(160, 160, 160, 0.73);
+    padding: 15px 10px;
+}
+
+.page-join:hover {
+    box-shadow: 1px 1px 50px rgba(0, 136, 204, 0.67);
+}
+
+.clearfix {
+    display: block;
+}
+
+.item {
+    margin-top: 1em;
+    padding: 0
+}
+
+.item>p {
+    padding: 0.5em 0;
+    word-wrap: break-word;
+}
+
+.item>ul {
+    height: auto;
+    padding: 20px 0;
+    margin: 30px 0;
+    border-left: #0088CC solid 1px;
+}
+
+.item>ul>li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+.item>ul>li>p {
+    padding-left: 15px;
+    font-size: 1.1em
+}
+
+.item>ul>li>h3 {
+    position: relative;
+    width: 100%;
+    font-size: 1.3em;
+}
+
+.item>ul>li>h3 .angle {
+    position: absolute;
+    top: 0px;
+    left: -6px;
+    width: 6px;
+    height: 43px;
+    overflow: hidden;
+    background: url(../img/item.gif) no-repeat;
+}
+
+.item>ul>li>h3>span {
+    float: left;
+    padding: 0px 33px 0 15px;
+    line-height: 36px;
+    font-weight: normal;
+    color: #fff;
+    background: #0088CC url(../img/itemafter.png) no-repeat right;
+}
+
+.pre,
+.list-jobs p {
+    white-space: pre;
+}
+
+.cont-right {
+    line-height: 28px;
+    margin-left: -15px
+}
+
+.qq {
+    margin: -5px 0 0 0;
+    max-width: 100%;
+    height: 32px;
+    cursor: pointer;
+    text-align: center;
+}
+
+@media (max-width:768px) {
+    .cont-right {
+        margin-left: 0
+    }
+    .qq {
+        margin: 0 0 10px 0;
+        text-align: center;
+    }
+}
+
+
+/* qq online */
+
+.cs_btn {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+
+/* end qq online */

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <!-- 国产浏览器极速模式即webkit内核 -->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./../bootstrap/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="./../bootstrap/css/login-register.css">
+    <!-- Theme style -->
+    <!-- <link rel="stylesheet" href="./../dist/css/AdminLTE.min.css"> -->
+    <!-- <link rel="stylesheet" href="./../dist/css/skins/skin-blue-light.css"> -->
+    <!--page css code for page-->
+    <link rel="stylesheet" href="./../page/css/page.css?v=201605251143">
+    <link rel="stylesheet" href="./../Public/css/base.min.css">
+    <link rel="stylesheet" href="./../Public/css/index.min.css">
+     <link rel="stylesheet" href="./../Public/css/swiper.min.css">
+    <script src='./../Public/js/jquery-1.8.3.min.js'></script>
+    <script src="./../Public/js/swiper.min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+
+<body>
+    <!-- 顶部导航 -->
+    <div id="header">
+        <div class="header-wrap">
+            <a class="logo" href="#">
+                <img class="fl" src="./../Public/images/logo.png" alt=""> 金车在线  客户云集
+            </a>
+            <a href="javascript:;" class="more fr">
+                <img src="./../Public/images/more.png" alt="">
+            </a>
+            <!--导航栏-->
+            <nav class="header-nav">
+                <ul>
+                    <li>
+                        <a href="./index.html">首页</a>
+                    </li>
+                    <li class="products-services">
+                        产品与服务
+                        <i class="triangle_border_down"></i>
+                    </li>
+                    <li>
+                        <a href="./partener.html">申请合作</a>
+                    </li>
+                    <li>
+                        <a href="./aboutus.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./join_us3.html">加入我们</a>
+                    </li>
+                    <li>
+                        <a href="http://cp.dealergood.com/login/index/index">经销商登录</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-nav-list" style="display:none;">
+            <!--产品与服务列表-->
+            <ul class="fn-clear" >
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">车况报告</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车车况</div>
+                            <div class="instructions">全面的车况报告</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">配件报价</div>
+                        <div class="c3pc-list-right-element">
+                            <div>全车配件报价</div>
+                            <div class="instructions">车厂准确配件价格</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">服务预测</div>
+                        <div class="c3pc-list-right-element">
+                            <div>完整服务预测</div>
+                            <div class="instructions">帮你更加了解你的爱车</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">售后智能</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车售后智能</div>
+                            <div class="instructions">基于大数据的智能体系</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+                <li>
+                    <a href="#slidebox">
+                        <div class="c3pc-list-left-element">行业数据</div>
+                        <div class="c3pc-list-right-element">
+                            <div>汽车行业数据</div>
+                            <div class="instructions">金车行业车型数据</div>
+                        </div>
+                    </a>
+                </li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <div id="slidebar">
+        <ul>
+            <li class="btn sure"><a href="./index.html">首页</a></li>
+            <li class="btn"><a href="./partener.html">申请合作</a></li>
+            <li class="btn"><a href="./aboutus.html">关于我们</a></li>
+            <li class="btn"><a href="./join_us3.html">加入我们</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="shade">
+        <div class="login-middle">
+            <div class="login-box">
+                <!-- /.login-logo -->
+                <div class="login-box-body">
+                    <form id="user_login_form" action="" method="post">
+                        <p class="login-box-msg title"><i class="glyphicon glyphicon-user"></i> <span>管理系统登录</span></p>
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control" placeholder="用户名" name="username" value="{$username}"> </div>
+
+                        <div class="form-group has-feedback">
+                            <input type="password" class="form-control" placeholder="密码" name="password"> </div>
+                        <div class="alert alert-danger hide" id="show_error_msg"> </div>
+                        <div class="row">
+                            <div class="col-md-6 col-sx-12">
+                                <div class="checkbox icheck">
+                                    <label>
+                                        <input type="hidden" value="1" name="remember">
+                                        <input type="checkbox" checked="checked" name="autologin">&nbsp;自动登陆 </label>
+                                </div>
+                            </div>
+                            <!-- /.col -->
+                            <div class="col-md-6 col-sx-12"> <a href="#" class="checkbox icheck pr">忘记密码？</a> </div>
+                            <!-- /.col -->
+                        </div>
+                        <div class="social-auth-links text-center"> </div>
+                        <!-- /.social-auth-links -->
+                        <button type="button" class="btn btn-primary btn-block btn-flat" id="user_login_btn">登录</button>
+                        <br>
+                        <a href="/register/memberRegController/index" class="text-center">注册新用户</a></form>
+                </div>
+                <!-- /.login-box-body -->
+            </div>
+        </div>
+    </div>
+    <!-- /.login-box -->
+    <!-- jQuery 1.9.1 -->
+    <script src="./../bootstrap/js/jquery-1.9.1.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="{$staticurl.jc}/bootstrap/js/bootstrap.min.js?v=__JS_VERSION__"></script>
+    <!-- iCheck -->
+    <script src="{$staticurl.jc}/plugins/iCheck/icheck.min.js?v=__JS_VERSION__"></script>
+    <script>
+        $(function () {
+            $('input').iCheck({
+                checkboxClass: 'icheckbox_square-blue'
+                , radioClass: 'iradio_square-blue'
+                , increaseArea: '20%' // optional
+            });
+        });
+    </script>
+    <script src="{$staticurl.jc}/plugins/validator/js/bootstrapValidator.min.js?v=__JS_VERSION__"></script>
+    <script src="./../bootstrap/js/login.js"></script>
+    <!-- qq online -->
+    <script src="./../bootstrap/js/qqonline.js"></script>
+
+</body>
+
+</html>
